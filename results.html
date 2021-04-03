@@ -149,30 +149,25 @@ stats"></a></div></noscript>
     isol = getQueryVariable("isol")
     nati = getQueryVariable("nati")
     mili = getQueryVariable("mili")
-    mili = getQueryVariable("trad")
-    mili = getQueryVariable("mono")
-    mili = getQueryVariable("theo")
-    mili = getQueryVariable("etat")
-    mili = getQueryVariable("regu")
-    mili = getQueryVariable("prod")
-
-    abso = (100 - powe).toFixed(1)
+    trad = getQueryVariable("trad")
+    mono = getQueryVariable("mono")
+    theo = getQueryVariable("theo")
+    etat = getQueryVariable("etat")
+    regu = getQueryVariable("regu")
+    prod = getQueryVariable("prod")
+    abso = (100 - cons).toFixed(1)
     auto = (100 - demo).toFixed(1)
     secu = (100 - libe).toFixed(1)
     cent = (100 - dece).toFixed(1)
-    unio = (100 - cent).toFixed(1)
-    glob = (100 - hori).toFixed(1)
-    inte = (100 - comm).toFixed(1)
-    paci = (100 - prot).toFixed(1)
-
-
-
-
-
-
-
-
-
+    unio = (100 - loca).toFixed(1)
+    glob = (100 - isol).toFixed(1)
+    inte = (100 - nati).toFixed(1)
+    paci = (100 - mili).toFixed(1)
+    prog = (100 - trad).toFixed(1)
+    laic = (100 - theo).toFixed(1)
+    lais = (100 - etat).toFixed(1)
+    dere = (100 - regu).toFixed(1)
+    sust = (100 - prod).toFixed(1)
 
     setBarValue("cons", cons)
     setBarValue("abso", abso)
