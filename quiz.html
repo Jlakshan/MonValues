@@ -63,6 +63,12 @@ stats"></a></div></noscript>
         max_bopen += Math.abs(questions[i].effect.bopen)
         max_bnati += Math.abs(questions[i].effect.bnati)
         max_bconf += Math.abs(questions[i].effect.bconf)
+        max_bvalu += Math.abs(questions[i].effect.bvalu)
+        max_bcult += Math.abs(questions[i].effect.bcult)
+        max_breli += Math.abs(questions[i].effect.breli)
+        max_bowne += Math.abs(questions[i].effect.bowne)
+        max_bregu += Math.abs(questions[i].effect.bregu)
+        max_bprod += Math.abs(questions[i].effect.bprod)
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
@@ -86,6 +92,12 @@ stats"></a></div></noscript>
         bopen += mult*questions[qn].effect.bopen
         bnati += mult*questions[qn].effect.bnati
         bconf += mult*questions[qn].effect.bconf
+        bvalu += mult*questions[qn].effect.bvalu
+        bcult += mult*questions[qn].effect.bcult
+        breli += mult*questions[qn].effect.breli
+        bowne += mult*questions[qn].effect.bowne
+        bregu += mult*questions[qn].effect.bregu
+        bprod += mult*questions[qn].effect.bprod
         qn++;
         prev_answer = mult;
         if (qn < questions.length) {
@@ -107,6 +119,12 @@ stats"></a></div></noscript>
         bopen -= prev_answer * questions[qn].effect.bopen;
         bnati -= prev_answer * questions[qn].effect.bnati;
         bconf -= prev_answer * questions[qn].effect.bconf;
+        bvalu -= prev_answer * questions[qn].effect.bvalu;
+        bcult -= prev_answer * questions[qn].effect.bcult;
+        breli -= prev_answer * questions[qn].effect.breli;
+        bowne -= prev_answer * questions[qn].effect.bowne;
+        bregu -= prev_answer * questions[qn].effect.bregu;
+        bprod -= prev_answer * questions[qn].effect.bprod;
         prev_answer = null;
         init_question();
 
@@ -124,6 +142,12 @@ stats"></a></div></noscript>
             + `&open=${calc_score(bstru,max_bopen)}`
             + `&nati=${calc_score(bland,max_bnati)}`
             + `&conf=${calc_score(btrad,max_bconf)}`
+            + `&valu=${calc_score(btrad,max_bvalu)}`
+            + `&cult=${calc_score(btrad,max_bcult)}`
+            + `&reli=${calc_score(btrad,max_breli)}`
+            + `&owne=${calc_score(btrad,max_bowne)}`
+            + `&regu=${calc_score(btrad,max_bregu)}`
+            + `&prod=${calc_score(btrad,max_bprod)}`
     }
 </script>
 </body>
