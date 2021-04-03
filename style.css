@@ -144,53 +144,53 @@ div.text-wrapper {
     color: #000000;
     display: inline-block;
 }
-div.regu {
-    background-color: #79002c;
+div.cons {
+    background-color: #fffb00;
     text-align: left;
     border-right-style: solid;
 }
-div.exte {
-    background-color: #603000;
+div.abso {
+    background-color: #6e1860;
     text-align: right;
     border-left-style: solid;
+}
+div.demo {
+    background-color: #7add5c;
+    text-align: left;
+    border-right-style: solid;
 }
 div.auto {
-    background-color: #a0a0c0;
-    text-align: left;
-    border-right-style: solid;
-}
-div.empl {
-    background-color: #9040a0;
+    background-color: #be3737;
     text-align: right;
     border-left-style: solid;
 }
-div.dema {
-    background-color: #f17a79;
+div.libe {
+    background-color: #ffc400;
     text-align: left;
     border-right-style: solid;
 }
-div.pate {
-    background-color: #ffa050;
+div.secu {
+    background-color: #27217c;
     text-align: right;
     border-left-style: solid;
 }
-div.equi {
-    background-color: #bc1643;
+div.dece {
+    background-color: #fffb00;
     text-align: left;
     border-right-style: solid;
-}
-div.comp {
-    background-color: #feff21;
-    text-align: right;
-    border-left-style: solid;
 }
 div.cent {
-    background-color: #26366d;
+    background-color: #d43b3b;
+    text-align: right;
+    border-left-style: solid;
+}
+div.loca {
+    background-color: #43f81f;
     text-align: left;
     border-right-style: solid;
 }
-div.loca {
-    background-color: #eb6419;
+div.unio {
+    background-color: #d17825;
     text-align: right;
     border-left-style: solid;
 }
