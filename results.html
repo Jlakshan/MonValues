@@ -103,6 +103,13 @@
     <div class="bar lais" id="bar-lais"><div class="text-wrapper" id="lais"></div></div>
     <img id="img-lais" src="value_images/laissez-faire.png" height="128pt"/>
 </div>
+<h2>Regulation Axis : <span class="weight-300" id="bregu"></span></h2>
+<div class="axis">
+    <img id="img-regu" src="value_images/regulationism.png" height="128pt"/>
+    <div class="bar regu" id="bar-regu"><div class="text-wrapper" id="regu"></div></div>
+    <div class="bar dere" id="bar-dere"><div class="text-wrapper" id="dere"></div></div>
+    <img id="img-dere" src="value_images/deregulationism.png" height="128pt"/>
+</div>
 <h2>Values Axis : <span class="weight-300" id="bprod"></span></h2>
 <div class="axis">
     <img id="img-prod" src="value_images/production.png" height="128pt"/>
@@ -385,14 +392,14 @@ stats"></a></div></noscript>
         if (glob > 30) {ctx.fillText(glob + "%", 670, 1072.5)}
 
         ctx.textAlign="center"
-        ctx.fillText("Power Axis: " + document.getElementById("bregu").innerHTML, 400, 175)
-        ctx.fillText("Authority Axis: " + document.getElementById("btech").innerHTML, 400, 295)
-        ctx.fillText("Government Axis: " + document.getElementById("binte").innerHTML, 400, 415)
-        ctx.fillText("Organisation Axis: " + document.getElementById("bince").innerHTML, 400, 535)
-        ctx.fillText("Size Axis: " + document.getElementById("borga").innerHTML, 400, 655)
-        ctx.fillText("Openness Axis: " + document.getElementById("bstru").innerHTML, 400, 775)
-        ctx.fillText("Nationalism Axis: " + document.getElementById("bland").innerHTML, 400, 895)
-        ctx.fillText("Conflict Axis: " + document.getElementById("btrad").innerHTML, 400, 1015)
+        ctx.fillText("Power Axis: " + document.getElementById("bpowe").innerHTML, 400, 175)
+        ctx.fillText("Authority Axis: " + document.getElementById("bauth").innerHTML, 400, 295)
+        ctx.fillText("Government Axis: " + document.getElementById("bgovt").innerHTML, 400, 415)
+        ctx.fillText("Organisation Axis: " + document.getElementById("borg").innerHTML, 400, 535)
+        ctx.fillText("Size Axis: " + document.getElementById("bsize").innerHTML, 400, 655)
+        ctx.fillText("Openness Axis: " + document.getElementById("bopen").innerHTML, 400, 775)
+        ctx.fillText("Nationalism Axis: " + document.getElementById("bnati").innerHTML, 400, 895)
+        ctx.fillText("Conflict Axis: " + document.getElementById("bconf").innerHTML, 400, 1015)
 
         document.getElementById("banner").src = c.toDataURL();
     }
