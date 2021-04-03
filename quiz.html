@@ -57,7 +57,7 @@ stats"></a></div></noscript>
     for (var i = 0; i < questions.length; i++) {
         max_bpowe += Math.abs(questions[i].effect.bpowe)
         max_bdemo += Math.abs(questions[i].effect.bdemo)
-        max_blibe += Math.abs(questions[i].effect.blibe)
+        max_bgovt += Math.abs(questions[i].effect.bgovt)
         max_bcent += Math.abs(questions[i].effect.bcent)
         max_bsize += Math.abs(questions[i].effect.bsize)
         max_bopen += Math.abs(questions[i].effect.bopen)
@@ -86,7 +86,7 @@ stats"></a></div></noscript>
     function next_question(mult) {
         bpowe += mult*questions[qn].effect.bpowe
         bdemo += mult*questions[qn].effect.bdemo
-        blibe += mult*questions[qn].effect.blibe
+        bgovt += mult*questions[qn].effect.bgovt
         bcent += mult*questions[qn].effect.bcent
         bsize += mult*questions[qn].effect.bsize
         bopen += mult*questions[qn].effect.bopen
@@ -113,7 +113,7 @@ stats"></a></div></noscript>
         qn--;
         bpowe -= prev_answer * questions[qn].effect.bpowe;
         bdemo -= prev_answer * questions[qn].effect.bdemo;
-        blibe -= prev_answer * questions[qn].effect.blibe;
+        bgovt -= prev_answer * questions[qn].effect.bgovt;
         bcent -= prev_answer * questions[qn].effect.bcent;
         bsize -= prev_answer * questions[qn].effect.bsize;
         bopen -= prev_answer * questions[qn].effect.bopen;
@@ -136,7 +136,7 @@ stats"></a></div></noscript>
         location.href = `results.html`
             + `?cons=${calc_score(bpowe,max_bpowe)}`
             + `&demo=${calc_score(bdemo,max_bdemo)}`
-            + `&libe=${calc_score(blibe,max_blibe)}`
+            + `&libe=${calc_score(bgovt,max_bgovt)}`
             + `&dece=${calc_score(bcent,max_bcent)}`
             + `&loca=${calc_score(bsize,max_bsize)}`
             + `&isol=${calc_score(bopen,max_bopen)}`

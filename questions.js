@@ -2,9 +2,9 @@ questions = [
     {
         "question": "trollface",
         "effect": {
-            "bpowe": 10,
+            "bpowe": 0,
             "bdemo": 0,
-            "blibe": 0,
+            "bgovt": 0,
             "bcent": 0,
             "bsize": 0,
             "bopen": 0,
