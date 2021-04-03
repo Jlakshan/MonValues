@@ -198,14 +198,21 @@ stats"></a></div></noscript>
     setBarValue("prod", prod)
     setBarValue("sust", sust)
 
+    document.getElementById("bpowe").innerHTML = setLabel(cons, bpoweArray)
+    document.getElementById("bdemo").innerHTML = setLabel(demo, bdemoArray)
+    document.getElementById("blibe").innerHTML = setLabel(libe, blibeArray)
+    document.getElementById("bcent").innerHTML = setLabel(dece, bcentArray)
+    document.getElementById("bloca").innerHTML = setLabel(loca, blocaArray)
+    document.getElementById("bopen").innerHTML = setLabel(isol, bopenArray)
+    document.getElementById("bnati").innerHTML = setLabel(nati, bnatiArray)
+    document.getElementById("bconf").innerHTML = setLabel(mili, bconfArray)
+    document.getElementById("bvalu").innerHTML = setLabel(trad, bvaluArray)
+    document.getElementById("bcult").innerHTML = setLabel(mono, bcultArray)
+    document.getElementById("breli").innerHTML = setLabel(theo, breliArray)
+    document.getElementById("bowne").innerHTML = setLabel(etat, bowneArray)
     document.getElementById("bregu").innerHTML = setLabel(regu, breguArray)
-    document.getElementById("btech").innerHTML = setLabel(auto, btechArray)
-    document.getElementById("binte").innerHTML = setLabel(dema, binteArray)
-    document.getElementById("bince").innerHTML = setLabel(equi, binceArray)
-    document.getElementById("bcent").innerHTML = setLabel(cent, bcentArray)
-    document.getElementById("bstru").innerHTML = setLabel(hori, bstruArray)
-    document.getElementById("bland").innerHTML = setLabel(comm, blandArray)
-    document.getElementById("btrad").innerHTML = setLabel(prot, btradArray)
+    document.getElementById("bprod").innerHTML = setLabel(prod, bprodArray)
+
 
     ideology = ""
     ideodist = Infinity
