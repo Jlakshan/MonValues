@@ -55,14 +55,14 @@ stats"></a></div></noscript>
     var prev_answer = null;
     init_question();
     for (var i = 0; i < questions.length; i++) {
-        max_bregu += Math.abs(questions[i].effect.bregu)
-        max_btech += Math.abs(questions[i].effect.btech)
-        max_binte += Math.abs(questions[i].effect.binte)
-        max_bince += Math.abs(questions[i].effect.bince)
+        max_bpowe += Math.abs(questions[i].effect.bpowe)
+        max_bdemo += Math.abs(questions[i].effect.bdemo)
+        max_blibe += Math.abs(questions[i].effect.blibe)
         max_bcent += Math.abs(questions[i].effect.bcent)
-        max_bstru += Math.abs(questions[i].effect.bstru)
-        max_bland += Math.abs(questions[i].effect.bland)
-        max_btrad += Math.abs(questions[i].effect.btrad)
+        max_bloca += Math.abs(questions[i].effect.bloca)
+        max_bopen += Math.abs(questions[i].effect.bopen)
+        max_bnati += Math.abs(questions[i].effect.bnati)
+        max_bconf += Math.abs(questions[i].effect.bconf)
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
