@@ -120,14 +120,14 @@ stats"></a></div></noscript>
         }
     }
 
-    breguArray = ["Pigouvian","Regulated","Regulated","Neutral","Unregulated","Unregulated","Pollutive"]
-    btechArray = ["Cybernetic","Automated","Streamlined","Neutral","Manual","Blue Collar","Luddite"]
-    binteArray = ["Laissez Faire","Free Market","Permissive","Neutral","Adjusted","Intervening","Paternalistic"]
-    binceArray = ["Egalitarian","Equal","Fair","Neutral","Competitive","Rugged","Meritocratic"]
-    bcentArray = ["Centralised","Concentrated","Unified","Neutral","Dispersed","Decentralised","Localised"]
-    bstruArray = ["Anarchist","Horizontal","Levelled","Neutral","Disparity","Hierarchical","Stratified"]
-    blandArray = ["Common Land","Georgism","Anti Rent","Neutral","Tenure","Landed","Propertarian"]
-    btradArray = ["Autarky","Protectionist","Tariffs","Neutral","International","Globalised","Global Economy"]
+    bpoweArray = ["Pawn","Figurehead","Constitutional","Neutral","Semi-Constitutional","Absolute","Despotic"]
+    bdemoArray = ["d","d","d","d","","d","d"]
+    blibeArray = ["Anarchy","Minarchism","Liberalism","Neutral","Statism","Authoritarianism","Totalitarianism"]
+    bcentArray = ["Confederal","Federal","Decentralised","Neutral","Centralised","Unitary",""]
+    blocaArray = ["Tribal","Urbist","   ","Neutral","Dispersed","Decentralised","Localised"]
+    bopenArray = ["Anarchist","Horizontal","Levelled","Neutral","Disparity","Hierarchical","Stratified"]
+    bnatiArray = ["Common Land","Georgism","Anti Rent","Neutral","Tenure","Landed","Propertarian"]
+    bconfArray = ["Autarky","Protectionist","Tariffs","Neutral","International","Globalised","Global Economy"]
 
     function setLabel(val,ary) {
         if (val > 100) { return "" } else
@@ -149,7 +149,7 @@ stats"></a></div></noscript>
     hori = getQueryVariable("hori")
     comm = getQueryVariable("comm")
     prot = getQueryVariable("prot")
-    
+
     exte = (100 - regu).toFixed(1)
     empl = (100 - auto).toFixed(1)
     pate = (100 - dema).toFixed(1)
@@ -159,22 +159,34 @@ stats"></a></div></noscript>
     rent = (100 - comm).toFixed(1)
     glob = (100 - prot).toFixed(1)
 
-    setBarValue("regu", regu)
-    setBarValue("exte", exte)
+    setBarValue("cons", cons)
+    setBarValue("abso", abso)
+    setBarValue("demo", demo)
     setBarValue("auto", auto)
-    setBarValue("empl", empl)
-    setBarValue("dema", dema)
-    setBarValue("pate", pate)
-    setBarValue("equi", equi)
-    setBarValue("comp", comp)
+    setBarValue("libe", libe)
+    setBarValue("secu", secu)
+    setBarValue("dece", dece)
     setBarValue("cent", cent)
     setBarValue("loca", loca)
-    setBarValue("hori", hori)
-    setBarValue("hier", hier)
-    setBarValue("comm", comm)
-    setBarValue("rent", rent)
-    setBarValue("prot", prot)
+    setBarValue("unio", unio)
+    setBarValue("isol", isol)
     setBarValue("glob", glob)
+    setBarValue("nati", nati)
+    setBarValue("inte", inte)
+    setBarValue("mili", mili)
+    setBarValue("paci", paci)
+    setBarValue("trad", trad)
+    setBarValue("prog", prog)
+    setBarValue("mono", mono)
+    setBarValue("mult", mult)
+    setBarValue("theo", theo)
+    setBarValue("laic", laic)
+    setBarValue("etat", etat)
+    setBarValue("lais", lais)
+    setBarValue("regu", regu)
+    setBarValue("dere", dere)
+    setBarValue("prod", prod)
+    setBarValue("sust", sust)
 
     document.getElementById("bregu").innerHTML = setLabel(regu, breguArray)
     document.getElementById("btech").innerHTML = setLabel(auto, btechArray)
