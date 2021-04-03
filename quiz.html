@@ -59,7 +59,7 @@ stats"></a></div></noscript>
         max_bdemo += Math.abs(questions[i].effect.bdemo)
         max_blibe += Math.abs(questions[i].effect.blibe)
         max_bcent += Math.abs(questions[i].effect.bcent)
-        max_bloca += Math.abs(questions[i].effect.bloca)
+        max_bsize += Math.abs(questions[i].effect.bsize)
         max_bopen += Math.abs(questions[i].effect.bopen)
         max_bnati += Math.abs(questions[i].effect.bnati)
         max_bconf += Math.abs(questions[i].effect.bconf)
@@ -88,7 +88,7 @@ stats"></a></div></noscript>
         bdemo += mult*questions[qn].effect.bdemo
         blibe += mult*questions[qn].effect.blibe
         bcent += mult*questions[qn].effect.bcent
-        bloca += mult*questions[qn].effect.bloca
+        bsize += mult*questions[qn].effect.bsize
         bopen += mult*questions[qn].effect.bopen
         bnati += mult*questions[qn].effect.bnati
         bconf += mult*questions[qn].effect.bconf
@@ -115,7 +115,7 @@ stats"></a></div></noscript>
         bdemo -= prev_answer * questions[qn].effect.bdemo;
         blibe -= prev_answer * questions[qn].effect.blibe;
         bcent -= prev_answer * questions[qn].effect.bcent;
-        bloca -= prev_answer * questions[qn].effect.bloca;
+        bsize -= prev_answer * questions[qn].effect.bsize;
         bopen -= prev_answer * questions[qn].effect.bopen;
         bnati -= prev_answer * questions[qn].effect.bnati;
         bconf -= prev_answer * questions[qn].effect.bconf;
@@ -138,7 +138,7 @@ stats"></a></div></noscript>
             + `&demo=${calc_score(bdemo,max_bdemo)}`
             + `&libe=${calc_score(blibe,max_blibe)}`
             + `&dece=${calc_score(bcent,max_bcent)}`
-            + `&loca=${calc_score(bloca,max_bloca)}`
+            + `&loca=${calc_score(bsize,max_bsize)}`
             + `&isol=${calc_score(bopen,max_bopen)}`
             + `&nati=${calc_score(bnati,max_bnati)}`
             + `&mili=${calc_score(bconf,max_bconf)}`

@@ -6,7 +6,7 @@ questions = [
             "bdemo": 0,
             "blibe": 0,
             "bcent": 0,
-            "bloca": 0,
+            "bsize": 0,
             "bopen": 0,
             "bnati": 0,
             "bconf": 0,
