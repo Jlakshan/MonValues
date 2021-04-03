@@ -1,8 +1,8 @@
 questions = [
     {
-        "question": "question1",
+        "question": "trollface",
         "effect": {
-            "bpowe": 0,
+            "bpowe": 10,
             "bdemo": 0,
             "blibe": 0,
             "bcent": 0,
