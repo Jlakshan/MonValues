@@ -82,6 +82,34 @@
     <div class="bar prog" id="bar-prog"><div class="text-wrapper" id="prog"></div></div>
     <img id="img-prog" src="value_images/progressivism.png" height="128pt"/>
 </div>
+<h2>Culture Axis : <span class="weight-300" id="bcult"></span></h2>
+<div class="axis">
+    <img id="img-mono" src="value_images/monoculturalism.png" height="128pt"/>
+    <div class="bar mono" id="bar-mono"><div class="text-wrapper" id="mono"></div></div>
+    <div class="bar mult" id="bar-mult"><div class="text-wrapper" id="mult"></div></div>
+    <img id="img-mult" src="value_images/multiculturalism.png" height="128pt"/>
+</div>
+<h2>Religion Axis : <span class="weight-300" id="breli"></span></h2>
+<div class="axis">
+    <img id="img-theo" src="value_images/theocracy.png" height="128pt"/>
+    <div class="bar theo" id="bar-theo"><div class="text-wrapper" id="theo"></div></div>
+    <div class="bar laic" id="bar-laic"><div class="text-wrapper" id="laic"></div></div>
+    <img id="img-laic" src="value_images/laicism.png" height="128pt"/>
+</div>
+<h2>Values Axis : <span class="weight-300" id="bowne"></span></h2>
+<div class="axis">
+    <img id="img-etat" src="value_images/etatism.png" height="128pt"/>
+    <div class="bar etat" id="bar-etat"><div class="text-wrapper" id="etat"></div></div>
+    <div class="bar lais" id="bar-lais"><div class="text-wrapper" id="lais"></div></div>
+    <img id="img-lais" src="value_images/laissez-faire.png" height="128pt"/>
+</div>
+<h2>Values Axis : <span class="weight-300" id="bprod"></span></h2>
+<div class="axis">
+    <img id="img-prod" src="value_images/production.png" height="128pt"/>
+    <div class="bar prod" id="bar-prod"><div class="text-wrapper" id="prod"></div></div>
+    <div class="bar sust" id="bar-sust"><div class="text-wrapper" id="sust"></div></div>
+    <img id="img-sust" src="value_images/sustainability.png" height="128pt"/>
+</div>
 <h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
 <p>There's no closest match for now, so cope with the axes lmao</p>
 <p>d</p>
@@ -135,7 +163,7 @@ stats"></a></div></noscript>
     bopenArray = ["Anarchist","Horizontal","Levelled","Neutral","Disparity","Hierarchical","Stratified"]
     bnatiArray = ["Ultranationalism","Nationalism","Patriotism","Neutral","Tenure","Internationalism","Propertarian"]
     bconfArray = ["Autarky","Protectionist","Tariffs","Neutral","International","Globalised","Global Economy"]
-    bconfArray = ["Wonkaism","Isolationism","Semi-Isolationism","Neutral","Diplomacism","Globalism","Ultra-Globalism"]
+    bopenArray = ["Wonkaism","Isolationism","Semi-Isolationism","Neutral","Diplomacism","Globalism","Ultra-Globalism"]
     function setLabel(val,ary) {
         if (val > 100) { return "" } else
         if (val > 85) { return ary[0] } else
@@ -256,37 +284,37 @@ stats"></a></div></noscript>
         ctx.fillStyle = "#e0e0e0"
         ctx.fillRect(0,0,800,1150);
 
-        img = document.getElementById("img-regu")
+        img = document.getElementById("img-cons")
         ctx.drawImage(img, 20, 170, 100, 100);
-        img = document.getElementById("img-exte")
+        img = document.getElementById("img-abso")
         ctx.drawImage(img, 680, 170, 100, 100)
-        img = document.getElementById("img-auto")
+        img = document.getElementById("img-libe")
         ctx.drawImage(img, 20, 290, 100, 100)
-        img = document.getElementById("img-empl")
+        img = document.getElementById("img-secu")
         ctx.drawImage(img, 680, 290, 100, 100)
-        img = document.getElementById("img-dema")
+        img = document.getElementById("img-demo")
         ctx.drawImage(img, 20, 410, 100, 100)
-        img = document.getElementById("img-pate")
+        img = document.getElementById("img-auto")
         ctx.drawImage(img, 680, 410, 100, 100)
-        img = document.getElementById("img-equi")
+        img = document.getElementById("img-dece")
         ctx.drawImage(img, 20, 530, 100, 100)
-        img = document.getElementById("img-comp")
-        ctx.drawImage(img, 680, 530, 100, 100)
         img = document.getElementById("img-cent")
-        ctx.drawImage(img, 20, 650, 100, 100)
+        ctx.drawImage(img, 680, 530, 100, 100)
         img = document.getElementById("img-loca")
+        ctx.drawImage(img, 20, 650, 100, 100)
+        img = document.getElementById("img-unio")
         ctx.drawImage(img, 680, 650, 100, 100)
-        img = document.getElementById("img-hori")
+        img = document.getElementById("img-isol")
         ctx.drawImage(img, 20, 770, 100, 100);
-        img = document.getElementById("img-hier")
-        ctx.drawImage(img, 680, 770, 100, 100)
-        img = document.getElementById("img-comm")
-        ctx.drawImage(img, 20, 890, 100, 100)
-        img = document.getElementById("img-rent")
-        ctx.drawImage(img, 680, 890, 100, 100)
-        img = document.getElementById("img-prot")
-        ctx.drawImage(img, 20, 1010, 100, 100)
         img = document.getElementById("img-glob")
+        ctx.drawImage(img, 680, 770, 100, 100)
+        img = document.getElementById("img-nati")
+        ctx.drawImage(img, 20, 890, 100, 100)
+        img = document.getElementById("img-inte")
+        ctx.drawImage(img, 680, 890, 100, 100)
+        img = document.getElementById("img-mili")
+        ctx.drawImage(img, 20, 1010, 100, 100)
+        img = document.getElementById("img-paci")
         ctx.drawImage(img, 680, 1010, 100, 100)
 
         ctx.fillStyle="#000000"
