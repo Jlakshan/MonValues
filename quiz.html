@@ -47,18 +47,18 @@ stats"></a></div></noscript>
 -->
 <!-- JavaScript for the test itself -->
 <script>
-    var max_bregu, max_btech, max_binte, max_bince, max_bcent, max_bstru, max_bland, max_btrad; // Max possible scores
-    max_bregu = max_btech = max_binte = max_bince = max_bcent = max_bstru = max_bland = max_btrad = 0;
-    var bregu, btech, binte, bince, bcent, bstru, bland, btrad; // User's scores
-    bregu = btech = binte = bince = bcent = bstru = bland = btrad = 0;
+    var max_bpowe, max_bauth, max_bgovt, max_borga, max_bsize, max_bopen, max_bnati, max_bconf, max_bvalu, max_bcult, max_breli, max_bowne, max_bregu, max_bprod; // Max possible scores
+    max_bpowe = max_bauth = max_bgovt = max_borga = max_bsize = max_bopen = max_bnati = max_bconf = max_bvalu = max_bcult = max_breli = max_bowne = max_bregu =  max_bprod = 0;
+    var powe, auth, govt, orga, size, open, nati, conf, valu, cult, reli, owne, regu, prod; // User's scores
+    bpowe = bauth = bgovt = borga = bsize = bopen = bnati = bconf = bvalu = bcult = breli = bowne = bregu = bprod = 0;
     var qn = 0; // Question number
     var prev_answer = null;
     init_question();
     for (var i = 0; i < questions.length; i++) {
         max_bpowe += Math.abs(questions[i].effect.bpowe)
-        max_bdemo += Math.abs(questions[i].effect.bdemo)
+        max_bauth += Math.abs(questions[i].effect.bauth)
         max_bgovt += Math.abs(questions[i].effect.bgovt)
-        max_bcent += Math.abs(questions[i].effect.bcent)
+        max_borga += Math.abs(questions[i].effect.borga)
         max_bsize += Math.abs(questions[i].effect.bsize)
         max_bopen += Math.abs(questions[i].effect.bopen)
         max_bnati += Math.abs(questions[i].effect.bnati)
@@ -85,9 +85,9 @@ stats"></a></div></noscript>
 
     function next_question(mult) {
         bpowe += mult*questions[qn].effect.bpowe
-        bdemo += mult*questions[qn].effect.bdemo
+        bauth += mult*questions[qn].effect.bauth
         bgovt += mult*questions[qn].effect.bgovt
-        bcent += mult*questions[qn].effect.bcent
+        borga += mult*questions[qn].effect.borga
         bsize += mult*questions[qn].effect.bsize
         bopen += mult*questions[qn].effect.bopen
         bnati += mult*questions[qn].effect.bnati
@@ -112,9 +112,9 @@ stats"></a></div></noscript>
         }
         qn--;
         bpowe -= prev_answer * questions[qn].effect.bpowe;
-        bdemo -= prev_answer * questions[qn].effect.bdemo;
+        bauth -= prev_answer * questions[qn].effect.bauth;
         bgovt -= prev_answer * questions[qn].effect.bgovt;
-        bcent -= prev_answer * questions[qn].effect.bcent;
+        borga -= prev_answer * questions[qn].effect.borga;
         bsize -= prev_answer * questions[qn].effect.bsize;
         bopen -= prev_answer * questions[qn].effect.bopen;
         bnati -= prev_answer * questions[qn].effect.bnati;
@@ -135,9 +135,9 @@ stats"></a></div></noscript>
     function results() {
         location.href = `results.html`
             + `?cons=${calc_score(bpowe,max_bpowe)}`
-            + `&demo=${calc_score(bdemo,max_bdemo)}`
+            + `&demo=${calc_score(bauth,max_bauth)}`
             + `&libe=${calc_score(bgovt,max_bgovt)}`
-            + `&dece=${calc_score(bcent,max_bcent)}`
+            + `&dece=${calc_score(borga,max_borga)}`
             + `&loca=${calc_score(bsize,max_bsize)}`
             + `&isol=${calc_score(bopen,max_bopen)}`
             + `&nati=${calc_score(bnati,max_bnati)}`

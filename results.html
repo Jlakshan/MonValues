@@ -47,7 +47,7 @@
     <div class="bar comp" id="bar-comp"><div class="text-wrapper" id="comp"></div></div>
     <img id="img-comp" src="value_images/competition.png" height="128pt"/>
 </div>
-<h2>Centralisation Axis : <span class="weight-300" id="bcent"></span></h2>
+<h2>Centralisation Axis : <span class="weight-300" id="borga"></span></h2>
 <div class="axis">
     <img id="img-cent" src="value_images/central.png" height="128pt"/>
     <div class="bar cent" id="bar-cent"><div class="text-wrapper" id="cent"></div></div>
@@ -121,9 +121,9 @@ stats"></a></div></noscript>
     }
 
     bpoweArray = ["Pawn","Figurehead","Constitutional","Neutral","Semi-Constitutional","Absolute","Despotic"]
-    bdemoArray = ["d","d","d","d","","d","d"]
+    bauthArray = ["d","d","d","d","","d","d"]
     bgovtArray = ["Anarchy","Minarchism","Liberalism","Neutral","Statism","Authoritarianism","Totalitarianism"]
-    bcentArray = ["Confederal","Federal","Decentralised","Neutral","Centralised","Unitary",""]
+    borgaArray = ["Confederal","Federal","Decentralised","Neutral","Centralised","Unitary",""]
     bsizeArray = ["Tribal","Urbist","   ","Neutral","Dispersed","Decentralised","Localised"]
     bopenArray = ["Anarchist","Horizontal","Levelled","Neutral","Disparity","Hierarchical","Stratified"]
     bnatiArray = ["Ultranationalism","Nationalism","Patriotism","Neutral","Tenure","Internationalism","Propertarian"]
@@ -199,9 +199,9 @@ stats"></a></div></noscript>
     setBarValue("sust", sust)
 
     document.getElementById("bpowe").innerHTML = setLabel(cons, bpoweArray)
-    document.getElementById("bdemo").innerHTML = setLabel(demo, bdemoArray)
+    document.getElementById("bauth").innerHTML = setLabel(demo, bauthArray)
     document.getElementById("bgovt").innerHTML = setLabel(libe, bgovtArray)
-    document.getElementById("bcent").innerHTML = setLabel(dece, bcentArray)
+    document.getElementById("borga").innerHTML = setLabel(dece, borgaArray)
     document.getElementById("bsize").innerHTML = setLabel(loca, bsizeArray)
     document.getElementById("bopen").innerHTML = setLabel(isol, bopenArray)
     document.getElementById("bnati").innerHTML = setLabel(nati, bnatiArray)
@@ -222,7 +222,7 @@ stats"></a></div></noscript>
         dist += Math.abs(ideologies[i].stats.btech - auto)*0.5
         dist += Math.abs(ideologies[i].stats.binte - dema)*0.8
         dist += Math.abs(ideologies[i].stats.bince - equi)*0.9
-        dist += Math.abs(ideologies[i].stats.bcent - cent)*0.8
+        dist += Math.abs(ideologies[i].stats.borga - cent)*0.8
         dist += Math.abs(ideologies[i].stats.bstru - hori)*1
         dist += Math.abs(ideologies[i].stats.bland - comm)*0.8
         dist += Math.abs(ideologies[i].stats.btrad - prot)*0.5
@@ -354,7 +354,7 @@ stats"></a></div></noscript>
         ctx.fillText("Technology Axis: " + document.getElementById("btech").innerHTML, 400, 295)
         ctx.fillText("Intervention Axis: " + document.getElementById("binte").innerHTML, 400, 415)
         ctx.fillText("Incentive Axis: " + document.getElementById("bince").innerHTML, 400, 535)
-        ctx.fillText("Centralisation Axis: " + document.getElementById("bcent").innerHTML, 400, 655)
+        ctx.fillText("Centralisation Axis: " + document.getElementById("borga").innerHTML, 400, 655)
         ctx.fillText("Structure Axis: " + document.getElementById("bstru").innerHTML, 400, 775)
         ctx.fillText("Land Axis: " + document.getElementById("bland").innerHTML, 400, 895)
         ctx.fillText("Trade Axis: " + document.getElementById("btrad").innerHTML, 400, 1015)
