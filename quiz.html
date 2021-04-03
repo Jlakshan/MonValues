@@ -79,14 +79,14 @@ stats"></a></div></noscript>
     }
 
     function next_question(mult) {
-        bregu += mult*questions[qn].effect.bregu
-        btech += mult*questions[qn].effect.btech
-        binte += mult*questions[qn].effect.binte
-        bince += mult*questions[qn].effect.bince
-        bcent += mult*questions[qn].effect.bcent
-        bstru += mult*questions[qn].effect.bstru
-        bland += mult*questions[qn].effect.bland
-        btrad += mult*questions[qn].effect.btrad
+        bregu += mult*questions[qn].effect.bpowe
+        btech += mult*questions[qn].effect.bdemo
+        binte += mult*questions[qn].effect.blibe
+        bince += mult*questions[qn].effect.bcent
+        bcent += mult*questions[qn].effect.bloca
+        bstru += mult*questions[qn].effect.bopen
+        bland += mult*questions[qn].effect.bnati
+        btrad += mult*questions[qn].effect.bconf
         qn++;
         prev_answer = mult;
         if (qn < questions.length) {
@@ -100,14 +100,14 @@ stats"></a></div></noscript>
             return;
         }
         qn--;
-        bregu -= prev_answer * questions[qn].effect.bregu;
-        btech -= prev_answer * questions[qn].effect.btech;
-        binte -= prev_answer * questions[qn].effect.binte;
-        bince -= prev_answer * questions[qn].effect.bince;
+        bpowe -= prev_answer * questions[qn].effect.bpowe;
+        bdemo -= prev_answer * questions[qn].effect.bdemo;
+        blibe -= prev_answer * questions[qn].effect.blibe;
         bcent -= prev_answer * questions[qn].effect.bcent;
-        bstru -= prev_answer * questions[qn].effect.bstru;
-        bland -= prev_answer * questions[qn].effect.bland;
-        btrad -= prev_answer * questions[qn].effect.btrad;
+        bloca -= prev_answer * questions[qn].effect.bloca;
+        bopen -= prev_answer * questions[qn].effect.bopen;
+        bnati -= prev_answer * questions[qn].effect.bnati;
+        bconf -= prev_answer * questions[qn].effect.bconf;
         prev_answer = null;
         init_question();
 
@@ -117,14 +117,14 @@ stats"></a></div></noscript>
     }
     function results() {
         location.href = `results.html`
-            + `?regu=${calc_score(bregu,max_bregu)}`
-            + `&auto=${calc_score(btech,max_btech)}`
-            + `&dema=${calc_score(binte,max_binte)}`
-            + `&equi=${calc_score(bince,max_bince)}`
-            + `&cent=${calc_score(bcent,max_bcent)}`
-            + `&hori=${calc_score(bstru,max_bstru)}`
-            + `&comm=${calc_score(bland,max_bland)}`
-            + `&prot=${calc_score(btrad,max_btrad)}`
+            + `?powe=${calc_score(bregu,max_bpowe)}`
+            + `&demo=${calc_score(btech,max_bdemo)}`
+            + `&libe=${calc_score(binte,max_blibe)}`
+            + `&cent=${calc_score(bince,max_bcent)}`
+            + `&loca=${calc_score(bcent,max_bloca)}`
+            + `&open=${calc_score(bstru,max_bopen)}`
+            + `&nati=${calc_score(bland,max_bnati)}`
+            + `&conf=${calc_score(btrad,max_bconf)}`
     }
 </script>
 </body>
